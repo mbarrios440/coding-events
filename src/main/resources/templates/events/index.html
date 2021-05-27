@@ -13,7 +13,7 @@
         <tr>
             <th>Event Name</th>
             <th>Description</th>
-            <th></th>
+            <th>Address</th>
         </tr>
     </thead>
 
@@ -21,10 +21,9 @@
         <tr>
             <td th:text ="${event.getKey()}"></td>
             <td th:text ="${event.getValue()}"></td>
-            <td></td>
+            <td th:replace="fragments :: techHub"></td>
         </tr>
     </th:block>
-    <tr th:replace="fragments :: techHub"></tr>
 </table>
 
 <!--<table class="table table-striped">-->
